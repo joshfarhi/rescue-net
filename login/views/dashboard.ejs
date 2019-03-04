@@ -1,22 +1,88 @@
-<h1 class="mt-4">Dashboard</h1>
+<!-- <h1 class="mt-4">Welcome to the Admin Dashboard.</h1>
+<h4 class="mt-4">Here you can see an overview of your network</h4>
 
 <div class="container">
+    <h1 class = mt-4>
+        Overview
+    </h1>
     <div class="row">
         <div class="col-1"></div>
-        <div class="col-2">hi</div>
-        <div class="col-2">hi</div>
-        <div class="col-2">hi</div>
-        <div class="col-2">hi</div>
-        <div class="col-2">hi</div>
+        <div class="col-2 text-center">
+                <i onclick="showDogModal(this)" class="far fa-dot-circle"></i>
+        </div>
+        <div class="col-2 text-center">
+                <i onclick="showDogModal(this)" class="far fa-dot-circle"></i>
+        </div>
+        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
         <div class="col-1"></div>
     </div>
     <div class="row">
         <div class="col-1"></div>
-        <div class="col-2">hi</div>
-        <div class="col-2">hi</div>
-        <div class="col-2">hi</div>
-        <div class="col-2">hi</div>
-        <div class="col-2">hi</div>
+        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
         <div class="col-1"></div>
+    </div>
+</div> -->
+
+
+
+<div class="welcome">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content">
+                    <h2>Welcome to the Admin Dashboard</h2>
+                    <p>Here you can see an overview of your transport.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
+<section class="charts">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="chart-container"> Booking
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-2 text-center">
+                            <i onclick="showDogModal(this)" class="far fa-dot-circle"></i>
+                        </div>
+                        <div class="col-2 text-center">
+                            <i onclick="showDogModal(this)" class="far fa-dot-circle"></i>
+                        </div>
+                        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+                        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+                        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+                        <div class="col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+                        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+                        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+                        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+                        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+                        <div class="col-1"></div>
+                    </div>
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="chart-container"> Routes
+                    <h3></h3>
+                    <canvas id="myChart2"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/js/dashboard.js">
+</script>

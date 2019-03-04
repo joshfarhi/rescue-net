@@ -1,0 +1,3 @@
+function showDogModal() {
+alert("hi")
+}

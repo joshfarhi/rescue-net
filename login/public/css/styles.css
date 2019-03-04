@@ -1,3 +1,37 @@
-body {
-    
-}
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+  
+  }
+  
+  .fa-dot-circle {
+font-size: 100px;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 10px;
+
+
+  }
+  
+  .welcome {
+    color: black;
+  }
+  .welcome .content {
+    background-color: whitesmoke;
+    padding: 15px;
+    margin-top: 25px;
+  }
+  .welcome h2 {
+    font-weight: 100;
+    margin-top: 0
+  }
+  .welcome p {
+    color: #999;
+  }
+  
+  
+  
