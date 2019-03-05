@@ -1,36 +1,3 @@
-<!-- <h1 class="mt-4">Welcome to the Admin Dashboard.</h1>
-<h4 class="mt-4">Here you can see an overview of your network</h4>
-
-<div class="container">
-    <h1 class = mt-4>
-        Overview
-    </h1>
-    <div class="row">
-        <div class="col-1"></div>
-        <div class="col-2 text-center">
-                <i onclick="showDogModal(this)" class="far fa-dot-circle"></i>
-        </div>
-        <div class="col-2 text-center">
-                <i onclick="showDogModal(this)" class="far fa-dot-circle"></i>
-        </div>
-        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
-        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
-        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
-        <div class="col-1"></div>
-    </div>
-    <div class="row">
-        <div class="col-1"></div>
-        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
-        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
-        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
-        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
-        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
-        <div class="col-1"></div>
-    </div>
-</div> -->
-
-
-
 <div class="welcome">
     <div class="container-fluid">
         <div class="row">
@@ -44,45 +11,65 @@
     </div>
 </div>
 
-<section class="charts">
-    <div class="container-fluid">
+<div class=transportDash>
+    <div class="container">
+        <div class=dashboardTitle>
+            <h1 class=mt-4>
+                Transport Overview
+            </h1>
+        </div>
+
         <div class="row">
-            <div class="col-md-6">
-                <div class="chart-container"> Booking
-                    <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-2 text-center">
-                            <i onclick="showDogModal(this)" class="far fa-dot-circle"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                            <i onclick="showDogModal(this)" class="far fa-dot-circle"></i>
-                        </div>
-                        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
-                        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
-                        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
-                        <div class="col-1"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
-                        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
-                        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
-                        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
-                        <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
-                        <div class="col-1"></div>
-                    </div>
-                    <canvas id="myChart"></canvas>
-                </div>
+            <div class="col-1"></div>
+            <div class="col-2 text-center">
+                <i onclick="showDogModal(this)" class="far fa-dot-circle"></i>
             </div>
-            <div class="col-md-6">
-                <div class="chart-container"> Routes
-                    <h3></h3>
-                    <canvas id="myChart2"></canvas>
+            <div class="col-2 text-center">
+                <i onclick="showDogModal(this)" class="far fa-dot-circle"></i>
+            </div>
+            <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+            <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+            <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+            <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+            <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+            <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+            <div class="col-2 text-center"><i onclick="showDogModal(this)" class="far fa-dot-circle"></i></div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+</div>
+<div class="transportDash">
+    <div class="container">
+        <div class="dashboardTitle">
+            <form>
+                <div class="form-group">
+                    <label for="start">Start</label>
+                    <input type="text" class="form-control" id="start" placeholder="Start(A)">
+                </div>
+                <div class="form-group">
+                    <label for="end">End</label>
+                    <input type="text" class="form-control" id="end" placeholder="End(B)">
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="initMap()">Submit</button>
+            </form>
+            <div style="width: auto; height: 500px;">
+
+
+                <div id="map">
+
+
                 </div>
             </div>
         </div>
     </div>
-</section>
-
+</div>
 <script src="/js/dashboard.js">
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXkxWJKkoaeLWUKdICQOxx0JtOVtZIqFE&callback=initMap">
 </script>
