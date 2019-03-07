@@ -5,7 +5,15 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "install": "yarn run install:client && yarn run install:server",
+    "install:client": "cd client && yarn",
+    "install:server": "cd server && yarn",
+    "build": "cd client && yarn build",
+    "start:dev": "concurrently -n client,server \"yarn run client:dev\" \"yarn run server:dev\"",
+    "client:dev": "cd client && yarn start",
+    "server:dev": "nodemon server/server.js",
+    "heroku-postbuild": "yarn build"
   },
   "keywords": [],
   "author": "",
