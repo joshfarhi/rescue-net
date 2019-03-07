@@ -7,6 +7,8 @@ const session = require('express-session');
 
 const app = express();
 
+//js nav
+app.use(express.static("./js"))
 
 // Passport Config
 require('./config/passport')(passport);
