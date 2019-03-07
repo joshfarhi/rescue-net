@@ -2,18 +2,11 @@
   "name": "rescue_net_login",
   "version": "2.0.0",
   "description": "rescue-net",
-  "main": "app.js",
+  "main": "loginworking/app.js",
   "scripts": {
     "start": "node loginworking/app.js",
-    "dev": "nodemon app.js",
-    "install": "npm run install:client && npm run install:server",
-    "install:client": "cd client && npm",
-    "install:server": "cd server && npm",
-    "build": "cd client && npm build",
-    "start:dev": "concurrently -n client,server \"npm run client:dev\" \"npm run server:dev\"",
-    "client:dev": "cd client && npm start",
-    "server:dev": "nodemon server/server.js",
-    "heroku-postbuild": "npm build"
+    "dev": "nodemon app.js"
+    
   },
   "keywords": [],
   "author": "",
