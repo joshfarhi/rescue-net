@@ -17,7 +17,8 @@ function showDogModal() {
           map: map,
         });
     
-       
+        displayRoute("Charlotte,NC","Concord,NC", directionsService,
+        directionsDisplay);
     
         displayRoute(document.getElementById("start").value, document.getElementById("end").value, directionsService,
             directionsDisplay);
