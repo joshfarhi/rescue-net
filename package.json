@@ -2,7 +2,7 @@
   "name": "rescue_net_login",
   "version": "2.0.0",
   "description": "rescue-net",
-  "main": "app.js",
+  "main": "loginworking/app.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
