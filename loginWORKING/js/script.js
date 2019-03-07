@@ -1,5 +1,5 @@
 function showDogModal() {
-    alert("hi")
+    alert("")
     }
     
     
