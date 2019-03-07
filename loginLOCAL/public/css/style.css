@@ -1,0 +1,21 @@
+html, body {
+  height: 90%;
+  
+}
+#map {
+  height: 100%;
+  
+  
+}
+
+  .fa-circle {
+    font-size: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  p {
+    color: #999;
+    font-size: 18px;
+  }

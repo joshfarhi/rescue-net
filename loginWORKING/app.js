@@ -7,6 +7,7 @@ const session = require('express-session');
 
 const app = express();
 
+
 // Passport Config
 require('./config/passport')(passport);
 
@@ -25,6 +26,10 @@ mongoose
 // EJS
 app.use(expressLayouts);
 app.set('view engine', 'ejs');
+
+// PUBLIC ASSETS
+app.use(express.static("./js"));
+app.use(express.static("./css"));
 
 // Express body parser
 app.use(express.urlencoded({ extended: true }));
@@ -56,6 +61,8 @@ app.use(function(req, res, next) {
 // Routes
 app.use('/', require('./routes/index.js'));
 app.use('/users', require('./routes/users.js'));
+
+
 
 const PORT = process.env.PORT || 5000;
 
