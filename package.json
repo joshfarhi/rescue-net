@@ -4,8 +4,8 @@
   "description": "rescue-net",
   "main": "app.js",
   "scripts": {
-    "start": "node loginWORKING/app.js",
-    "dev": "nodemon app.js"
+    "start": "cd loginWORKING && npm start",
+    "dev": "cd loginWORKING && npm run dev"
     
   },
   "keywords": [],
