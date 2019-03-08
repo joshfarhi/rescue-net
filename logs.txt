@@ -1,0 +1,100 @@
+2019-03-07T23:06:36.907206+00:00 app[web.1]: throw err;
+2019-03-07T23:06:36.907208+00:00 app[web.1]: ^
+2019-03-07T23:06:36.907210+00:00 app[web.1]: 
+2019-03-07T23:06:36.907212+00:00 app[web.1]: Error: Cannot find module '../models/User'
+2019-03-07T23:06:36.907214+00:00 app[web.1]: at Function.Module._resolveFilename (internal/modules/cjs/loader.js:649:15)
+2019-03-07T23:06:36.907215+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:575:25)
+2019-03-07T23:06:36.907218+00:00 app[web.1]: at Module.require (internal/modules/cjs/loader.js:705:19)
+2019-03-07T23:06:36.907220+00:00 app[web.1]: at require (internal/modules/cjs/helpers.js:14:16)
+2019-03-07T23:06:36.907221+00:00 app[web.1]: at Object.<anonymous> (/app/loginWORKING/config/passport.js:6:14)
+2019-03-07T23:06:36.907223+00:00 app[web.1]: at Module._compile (internal/modules/cjs/loader.js:799:30)
+2019-03-07T23:06:36.907225+00:00 app[web.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:810:10)
+2019-03-07T23:06:36.907226+00:00 app[web.1]: at Module.load (internal/modules/cjs/loader.js:666:32)
+2019-03-07T23:06:36.907229+00:00 app[web.1]: at tryModuleLoad (internal/modules/cjs/loader.js:606:12)
+2019-03-07T23:06:36.907230+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:598:3)
+2019-03-07T23:06:36.907232+00:00 app[web.1]: at Module.require (internal/modules/cjs/loader.js:705:19)
+2019-03-07T23:06:36.907234+00:00 app[web.1]: at require (internal/modules/cjs/helpers.js:14:16)
+2019-03-07T23:06:36.907236+00:00 app[web.1]: at Object.<anonymous> (/app/loginWORKING/app.js:10:1)
+2019-03-07T23:06:36.907237+00:00 app[web.1]: at Module._compile (internal/modules/cjs/loader.js:799:30)
+2019-03-07T23:06:36.907239+00:00 app[web.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:810:10)
+2019-03-07T23:06:36.907241+00:00 app[web.1]: at Module.load (internal/modules/cjs/loader.js:666:32)
+2019-03-07T23:06:36.916804+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2019-03-07T23:06:36.917174+00:00 app[web.1]: npm ERR! errno 1
+2019-03-07T23:06:36.918767+00:00 app[web.1]: npm ERR! rescue_net_login@2.0.0 start: `node app.js`
+2019-03-07T23:06:36.918889+00:00 app[web.1]: npm ERR! Exit status 1
+2019-03-07T23:06:36.919134+00:00 app[web.1]: npm ERR!
+2019-03-07T23:06:36.919310+00:00 app[web.1]: npm ERR! Failed at the rescue_net_login@2.0.0 start script.
+2019-03-07T23:06:36.919474+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2019-03-07T23:06:36.925940+00:00 app[web.1]: npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+2019-03-07T23:06:36.926658+00:00 app[web.1]: 
+2019-03-07T23:06:36.926855+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2019-03-07T23:06:36.926988+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2019-03-07T23_06_36_920Z-debug.log
+2019-03-07T23:06:36.935373+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2019-03-07T23:06:36.935762+00:00 app[web.1]: npm ERR! errno 1
+2019-03-07T23:06:36.936817+00:00 app[web.1]: npm ERR! rescue_net_login@2.0.0 start: `cd loginWORKING && npm start`
+2019-03-07T23:06:36.936934+00:00 app[web.1]: npm ERR! Exit status 1
+2019-03-07T23:06:36.937176+00:00 app[web.1]: npm ERR!
+2019-03-07T23:06:36.937430+00:00 app[web.1]: npm ERR! Failed at the rescue_net_login@2.0.0 start script.
+2019-03-07T23:06:36.937636+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2019-03-07T23:06:36.944927+00:00 app[web.1]: 
+2019-03-07T23:06:36.945080+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2019-03-07T23:06:36.945153+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2019-03-07T23_06_36_939Z-debug.log
+2019-03-07T23:06:37.024706+00:00 heroku[web.1]: State changed from starting to crashed
+2019-03-07T23:06:37.031395+00:00 heroku[web.1]: State changed from crashed to starting
+2019-03-07T23:06:37.007377+00:00 heroku[web.1]: Process exited with status 1
+2019-03-07T23:06:33.000000+00:00 app[api]: Build succeeded
+2019-03-07T23:06:39.405480+00:00 heroku[web.1]: Starting process with command `npm start`
+2019-03-07T23:06:41.388994+00:00 app[web.1]: 
+2019-03-07T23:06:41.389010+00:00 app[web.1]: > rescue_net_login@2.0.0 start /app
+2019-03-07T23:06:41.389012+00:00 app[web.1]: > cd loginWORKING && npm start
+2019-03-07T23:06:41.389013+00:00 app[web.1]: 
+2019-03-07T23:06:41.793467+00:00 app[web.1]: 
+2019-03-07T23:06:41.793504+00:00 app[web.1]: > rescue_net_login@2.0.0 start /app/loginWORKING
+2019-03-07T23:06:41.793506+00:00 app[web.1]: > node app.js
+2019-03-07T23:06:41.793508+00:00 app[web.1]: 
+2019-03-07T23:06:42.395991+00:00 app[web.1]: internal/modules/cjs/loader.js:651
+2019-03-07T23:06:42.396006+00:00 app[web.1]: throw err;
+2019-03-07T23:06:42.396008+00:00 app[web.1]: ^
+2019-03-07T23:06:42.396010+00:00 app[web.1]: 
+2019-03-07T23:06:42.396011+00:00 app[web.1]: Error: Cannot find module '../models/User'
+2019-03-07T23:06:42.396014+00:00 app[web.1]: at Function.Module._resolveFilename (internal/modules/cjs/loader.js:649:15)
+2019-03-07T23:06:42.396015+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:575:25)
+2019-03-07T23:06:42.396017+00:00 app[web.1]: at Module.require (internal/modules/cjs/loader.js:705:19)
+2019-03-07T23:06:42.396018+00:00 app[web.1]: at require (internal/modules/cjs/helpers.js:14:16)
+2019-03-07T23:06:42.396020+00:00 app[web.1]: at Object.<anonymous> (/app/loginWORKING/config/passport.js:6:14)
+2019-03-07T23:06:42.396022+00:00 app[web.1]: at Module._compile (internal/modules/cjs/loader.js:799:30)
+2019-03-07T23:06:42.396023+00:00 app[web.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:810:10)
+2019-03-07T23:06:42.396025+00:00 app[web.1]: at Module.load (internal/modules/cjs/loader.js:666:32)
+2019-03-07T23:06:42.396027+00:00 app[web.1]: at tryModuleLoad (internal/modules/cjs/loader.js:606:12)
+2019-03-07T23:06:42.396028+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:598:3)
+2019-03-07T23:06:42.396030+00:00 app[web.1]: at Module.require (internal/modules/cjs/loader.js:705:19)
+2019-03-07T23:06:42.396031+00:00 app[web.1]: at require (internal/modules/cjs/helpers.js:14:16)
+2019-03-07T23:06:42.396033+00:00 app[web.1]: at Object.<anonymous> (/app/loginWORKING/app.js:10:1)
+2019-03-07T23:06:42.396034+00:00 app[web.1]: at Module._compile (internal/modules/cjs/loader.js:799:30)
+2019-03-07T23:06:42.396036+00:00 app[web.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:810:10)
+2019-03-07T23:06:42.396037+00:00 app[web.1]: at Module.load (internal/modules/cjs/loader.js:666:32)
+2019-03-07T23:06:42.404820+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2019-03-07T23:06:42.405171+00:00 app[web.1]: npm ERR! errno 1
+2019-03-07T23:06:42.406284+00:00 app[web.1]: npm ERR! rescue_net_login@2.0.0 start: `node app.js`
+2019-03-07T23:06:42.406381+00:00 app[web.1]: npm ERR! Exit status 1
+2019-03-07T23:06:42.406566+00:00 app[web.1]: npm ERR!
+2019-03-07T23:06:42.406669+00:00 app[web.1]: npm ERR! Failed at the rescue_net_login@2.0.0 start script.
+2019-03-07T23:06:42.406763+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2019-03-07T23:06:42.414163+00:00 app[web.1]: npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+2019-03-07T23:06:42.414997+00:00 app[web.1]: 
+2019-03-07T23:06:42.415186+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2019-03-07T23:06:42.415300+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2019-03-07T23_06_42_407Z-debug.log
+2019-03-07T23:06:42.423010+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2019-03-07T23:06:42.423490+00:00 app[web.1]: npm ERR! errno 1
+2019-03-07T23:06:42.424619+00:00 app[web.1]: npm ERR! rescue_net_login@2.0.0 start: `cd loginWORKING && npm start`
+2019-03-07T23:06:42.424795+00:00 app[web.1]: npm ERR! Exit status 1
+2019-03-07T23:06:42.425078+00:00 app[web.1]: npm ERR!
+2019-03-07T23:06:42.425263+00:00 app[web.1]: npm ERR! Failed at the rescue_net_login@2.0.0 start script.
+2019-03-07T23:06:42.425434+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2019-03-07T23:06:42.430679+00:00 app[web.1]: 
+2019-03-07T23:06:42.430858+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2019-03-07T23:06:42.430943+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2019-03-07T23_06_42_426Z-debug.log
+2019-03-07T23:06:42.492097+00:00 heroku[web.1]: State changed from starting to crashed
+2019-03-07T23:06:42.477395+00:00 heroku[web.1]: Process exited with status 1
+2019-03-07T23:06:43.494757+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=secure-beyond-80147.herokuapp.com request_id=41d28fd5-db34-44a3-bab4-4f4f38859004 fwd="172.72.168.14" dyno= connect= service= status=503 bytes= protocol=https
+2019-03-07T23:06:58.726783+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=secure-beyond-80147.herokuapp.com request_id=d2789308-4eb3-4a8d-9227-86f17142b3fb fwd="172.72.168.14" dyno= connect= service= status=503 bytes= protocol=https

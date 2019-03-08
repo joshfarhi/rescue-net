@@ -6,10 +6,10 @@
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 <script src="/umd/my-logout.js"></script>
 <script>
-  ReactDOM.render(
-    React.createElement(MyLogout),
-	document.getElementById('my-logout')
-  );
+    ReactDOM.render(
+        React.createElement(MyLogout),
+        document.getElementById('my-logout')
+    );
 </script>
 
 <h1 class="mt-4">Dashboard</h1>
@@ -36,66 +36,99 @@
                     </div>
                     <div class="card-body">
                         <div class="booking-area">
-                                <div class="row">
-                                        <div class="col-1"></div>
-                                        <% animals.forEach(function(animal) { %>
-                                          <div class="col-2 text-center"><i onclick="showDogModal(this)" class="fas fa-circle"></i></div>
-                                        <% }); %>
-                                        <div class="col-1"></div>
-                                      </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="row">
-        <div class="col-12">
-            <div class="card card-route">
-                <div class="card-header">
-                    <div class="row">
-                        <div class="col-sm-6 text-left">
-                            <h5 class="card-category">
-                                Transport Route
-                            </h5>
-                            <div class="card-title">
-                                Enter Route Below
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <% animals.forEach(function(animal) { %>
+                                <script>
+                                    animalName = animal.pet_name
+                                </script>
+                                <div class="col-2 text-center"><i id="#dog1">
+                                    </i>
+                                    <strong>Pet Name: </strong>
+                                    <%= animal.pet_name %>
+                                    <br>
+                                    <br>
+                                    <strong>Breed: </strong>
+                                    <%= animal.pet_breed %>
+                                    <br>
+                                    <br>
+                                    <strong>Weight: </strong>
+                                    <%= animal.pet_weight %>
+                                    <br>
+                                    <br>
+                                    <strong>Gender: </strong>
+                                    <%= animal.pet_sex %>
+                                    <br>
+                                    <br>
+                                    <strong>Description: </strong>
+                                    <%= animal.pet_desc %>
+                                    <br>
+                                    <br>
+                                </div>
+                                <% }); %>
                             </div>
-
-                        </div>
-                    </div>
-                    <form>
-                        <div class="form-group">
-                            <label for="start">Start</label>
-                            <input type="text" class="form-control" id="start" placeholder="Start(A)">
-                        </div>
-                        <div class="form-group">
-                            <label for="end">End</label>
-                            <input type="text" class="form-control" id="end" placeholder="End(B)">
-                        </div>
-
-                        <button type="button" class="btn btn-primary" onclick="initMap()">Submit</button>
-                    </form>
-                    <div style="width: auto; height: 500px;">
-
-
-                        <div id="map">
-
-
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-2 text-center"><i onclick="showDogModal()" class="fas fa-circle" id="dogModal"></i></div>
+                                <div class="col-2 text-center"><i onclick="showDogModal()" class="fas fa-circle" id="dogModal"></i></div>
+                                <div class="col-2 text-center"><i onclick="showDogModal()" class="fas fa-circle" id="dogModal"></i></div>
+                                <div class="col-2 text-center"><i onclick="showDogModal()" class="fas fa-circle" id="dogModal"></i></div>
+                                <div class="col-2 text-center"><i onclick="showDogModal()" class="fas fa-circle" id="dogModal"></i></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
+
+<div class="row">
+    <div class="col-12">
+        <div class="card card-route">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-sm-6 text-left">
+                        <h5 class="card-category">
+                            Transport Route
+                        </h5>
+                        <div class="card-title">
+                            Enter Route Below
+                        </div>
+
+                    </div>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="start">Start</label>
+                        <input type="text" class="form-control" id="start" placeholder="Start(A)">
+                    </div>
+                    <div class="form-group">
+                        <label for="end">End</label>
+                        <input type="text" class="form-control" id="end" placeholder="End(B)">
+                    </div>
+
+                    <button type="button" class="btn btn-primary" onclick="initMap()">Submit</button>
+                </form>
+                <div style="width: auto; height: 500px;">
+
+
+                    <div id="map">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script type="text/javascript" src="script.js"></script>
-    </script>
-    <script>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+</script>
+<script>
     console.log(animals[0].pet_name)
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXkxWJKkoaeLWUKdICQOxx0JtOVtZIqFE&callback=initMap">
-    </script>
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXkxWJKkoaeLWUKdICQOxx0JtOVtZIqFE&callback=initMap">
+</script>

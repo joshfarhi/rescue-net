@@ -1,5 +1,6 @@
 function showDogModal() {
-    alert("")
+
+    alert("Spot is available")
     }
     
     
